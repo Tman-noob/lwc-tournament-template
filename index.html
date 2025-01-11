@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Template</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tournament</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#register" onclick="closeMenu()">Register</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <h1>Welcome to [Tournament Name]</h1>
+            <p>Your one-stop destination for registering teams and staying updated!</p>
+            <a href="#register" class="cta-button">Register Your Team</a>
+        </section>
+
+        <section id="register" class="register">
+            <h2>Team Registration</h2>
+            <form id="registration-form">
+                <!-- <label for="team-name"></label> -->
+                <input type="text" placeholder="Team Name" id="team-name" name="team-name" required>
+
+                <!-- <label for="team-contact"></label> -->
+                <input type="email" placeholder="Contact Email" id="team-contact" name="team-contact" required>
+
+                <!-- <label for="team-players"></label> -->
+                <textarea id="team-players" placeholder="Player Names" name="team-players" required></textarea>
+
+                <label for="payment">Registration Fee: $20</label>
+                <div id="payment-info">$XX.XX (via Square Payment)</div>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About the Tournament</h2>
+            <p>Details about the tournament go here, including rules, schedules, and prizes.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have questions, email us at <a href="mailto:tournament@example.com">tournament@example.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tournament. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

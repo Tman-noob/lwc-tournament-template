@@ -25,7 +25,8 @@ body {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links li {
@@ -54,6 +55,13 @@ main {
     text-align: center;
 }
 
+#cta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #registration-form {
     display: flex;
     flex-direction: column;
@@ -63,6 +71,7 @@ main {
 
 #team-name,
 #team-contact,
+#team-phone,
 #team-players {
     font-size: 15px;
     height: 30px;
@@ -93,10 +102,15 @@ footer {
         right: 0;
         width: 200px;
         border: 1px solid #222;
+        opacity: 0;
+        transform: translateY(-20px);
     }
 
     .nav-links.active {
         display: flex;
+        border: none;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .hamburger {

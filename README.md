@@ -1,9 +1,11 @@
 # lwc-tournament-template
 
-figure out how to send form to email
+figure out how to send form to email - done
 
 create cornhole registration page
 
-create volleyball registration page
+create volleyball registration page - started
 
 make drop down menu on navigation smoother
+
+work on redirect page after user pays on square

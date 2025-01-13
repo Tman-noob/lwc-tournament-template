@@ -20,12 +20,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     padding: 5px 20px;
 }
 
-.logo {
-    font-size: 1.5em;
+.logo-text {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -42,6 +44,7 @@ header {
 .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-links li a:hover {
@@ -49,7 +52,11 @@ header {
 }
 
 .nav-links a.active {
-    color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 146, 8);
+    padding: 1px 15px 1px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 0 5px 5px rgb(1, 146, 8);
 }
 
 .hamburger {

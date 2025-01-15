@@ -6,84 +6,43 @@
     <title>Terrones Tournaments</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html" rel="noopener" class="logo-text">Terrones<br>Tournaments</a>
+                <a href="index.html" rel="noopener" class="logo-text">TERRONES <br> TOURNAMENTS</a>
             </div>
             <div class="hamburger" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navbar-links">
                 <li><a href="index.html" rel="noopener" class="active" onclick="closeMenu()">Home</a></li>
                 <li><a href="cornhole/cornhole.html" rel="noopener" onclick="closeMenu()">Cornhole</a></li>
                 <li><a href="volleyball/volleyball.html" rel="noopener" onclick="closeMenu()">Volleyball</a></li>
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-            </ul>
+                <li><a href="###" rel="noopener" class="donate-now" onclick="closeMenu()">Donate Now</a></li>
+            </ul>           
         </nav>
     </header>
 
     <main>
         <section id="home" class="home">
-            <h1>Terrones Tournaments</h1>
+            <h1>Welcome to Terrones Tournaments - Where Fun Meets Competition!</h1>
             <p>Register for your cornhole or volleyball teams below. Or consider donating to our LWC Youth Group.</p>
             <div id="cta">
                 <a href="cornhole/cornhole.html" rel="noopener" class="cta-button">Register Your Cornhole Team</a>
                 <a href="volleyball/volleyball.html" rel="noopener" class="cta-button">Register Your Volleyball Team</a>
                 <a href="#register-volleyball" class="cta-button">Donate to LWC Youth Group</a>
-
             </div>
         </section>
 
-        <!-- <section id="register" class="register">
-            <h2>Team Registration</h2>
-
-            <form id="registration-form" action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="31a0601c-e412-4dc1-ada0-39ba0cebb1fd">
-
-                <input type="text" placeholder="Team Name" id="team-name" name="team-name" required>
-                <input type="email" placeholder="Team Captain Email" id="team-contact" name="team-contact" required>
-                <input type="tel" placeholder="Team Captain Phone #" id="team-phone" name="team-phone" required>
-                <textarea id="team-players" placeholder="Player Names" name="team-players" required></textarea>
-
-                <input type="hidden" name="redirect" value="https://square.link/u/a7g8qgEk">  
-                <button type="submit">Submit Registration</button> 
-
-            </form> -->
-
-
-            <!-- <form id="registration-form">
-                <label for="team-name"></label>
-                <input type="text" placeholder="Team Name" id="team-name" name="team-name" required>
-
-                <label for="team-contact"></label>
-                <input type="email" placeholder="Team Captain Email" id="team-contact" name="team-contact" required>
-
-                <input type="tel" placeholder="Team Captain Phone #" id="team-phone" name="team-phone" required>
-
-                <label for="team-players"></label>
-                <textarea id="team-players" placeholder="Player Names" name="team-players" required></textarea>
-
-                <label for="payment">Registration Fee: $20</label>
-                <div id="card-container"></div>
-                <a href="https://square.link/u/a7g8qgEk" rel="noopener">
-                    <button id="pay-button" type="button">Pay $XX.XX</button>
-                </a>
-                <div id="payment-status"></div>
-                
-                <a href="mailto:example@domain.com">
-                    <button type="submit">Submit Registration</button>
-                </a>
-            </form> -->
-        </section>
-
         <section id="about" class="about">
-            <h2>About the Tournament</h2>
+            <h2>About</h2>
             <p>All precedings go to our LWC Youth Group.</p>
         </section>
 
